@@ -21,6 +21,7 @@ public class DragAndDrop {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // wait for element fully loaded
 
 		driver.get("https://jqueryui.com/droppable/");
+		driver.getCurrentUrl();
 
 		driver.switchTo().frame(0); // switch to frame
 
